@@ -1,5 +1,5 @@
 == SFMLSpriter ==
 
-** An implementation of the [http://www.brashmonkey.com/spriter.htm Spriter] Beta File Format for [http://www.sfml-dev.org SFML] 2.0 **
+''' An implementation of the [http://www.brashmonkey.com/spriter.htm Spriter] Beta File Format for [http://www.sfml-dev.org SFML] 2.0 '''
 
 By Willi "Mr. Wonko" Schinmeyer
