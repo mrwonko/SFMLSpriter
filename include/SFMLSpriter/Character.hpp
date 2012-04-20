@@ -2,12 +2,18 @@
 #define SPRITER_SFML_CHARACTER_HPP
 
 #include "API.hpp"
+#include "TextureManager.hpp"
 
 namespace SFMLSpriter
 {
 
-class SPRITER_SFML_API Character
+class SFML_SPRITER_API Character
 {
+public:
+    Character(TextureManager& textureManager);
+
+private:
+    TextureManager& mTextureManager;
 };
 
 } //namespace SFMLSpriter

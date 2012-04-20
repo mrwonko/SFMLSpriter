@@ -1,14 +1,14 @@
-#ifndef SPRITER_SFML_API_HPP
-#define SPRITER_SFML_API_HPP
+#ifndef SFML_SPRITER_API_HPP
+#define SFML_SPRITER_API_HPP
 
 #ifdef _WIN32
-    #ifdef SPRITER_SFML_BUILD
-        #define SPRITER_SFML_API __declspec(dllexport)
+    #ifdef SFML_SPRITER_BUILD
+        #define SFML_SPRITER_API __declspec(dllexport)
     #else
-        #define SPRITER_SFML_API __declspec(dllimport)
+        #define SFML_SPRITER_API __declspec(dllimport)
     #endif
 #else
-    #define SPRITER_SFML_API
+    #define SFML_SPRITER_API
 #endif
 
 #endif
