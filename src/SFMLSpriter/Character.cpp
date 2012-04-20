@@ -1,4 +1,5 @@
 #include <SFMLSpriter/Character.hpp>
+#include <rapidxml.hpp>
 
 namespace SFMLSpriter
 {

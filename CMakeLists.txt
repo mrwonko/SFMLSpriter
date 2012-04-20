@@ -12,10 +12,11 @@ add_definitions(-Wall -DSPRITER)
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})
 # magic SFML locating, sets SFML_LIBRARIES and SFML_INCLUDE_DIR, amongst others
 find_package(SFML 2 REQUIRED system window graphics)
+find_package(RapidXML REQUIRED)
 
 #  Library
 # adding include path
-include_directories("${CMAKE_SOURCE_DIR}/include" ${SFML_INCLUDE_DIR})
+include_directories("${CMAKE_SOURCE_DIR}/include" ${SFML_INCLUDE_DIR} ${RAPIDXML_DIR})
 # adding source files, compiling to library - <executable> <source 1> <source 2> ... <source n>
 add_library(SFMLSpriter SHARED ${SFML_SPRITER_SOURCE_FILES}  ${SFML_SPRITER_INCLUDE_FILES})
 add_library(SFMLSpriter_s STATIC ${SFML_SPRITER_SOURCE_FILES}  ${SFML_SPRITER_INCLUDE_FILES})
