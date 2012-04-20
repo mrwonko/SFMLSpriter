@@ -15,6 +15,8 @@ namespace SFMLSpriter
 /** \brief Interface for a class managing texture loading for Characters
 
     A character will only load each texture it uses once and destroy it once it's done with it, but if you have multiple characters sharing textures you might want to use a custom texture manager that makes sure every texture is only loaded once, even across characters.
+
+    It is the TextureManager's responsibility to report image loading errors.
 **/
 class SFML_SPRITER_API TextureManager
 {

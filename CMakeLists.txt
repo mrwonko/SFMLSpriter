@@ -2,8 +2,20 @@ cmake_minimum_required(VERSION 2.6)
 # name and language
 project (SFMLSpriter CXX)
 
-set(SFML_SPRITER_SOURCE_FILES "src/SFMLSpriter/Character.cpp" "src/SFMLSpriter/SimpleTextureManager.cpp")
-set(SFML_SPRITER_INCLUDE_FILES "include/SFMLSpriter/Character.hpp" "include/SFMLSpriter/API.hpp" "include/SFMLSpriter/TextureManager.hpp" "include/SFMLSpriter/SimpleTextureManager.hpp")
+set(SFML_SPRITER_SOURCE_FILES
+		"src/SFMLSpriter/Character.cpp"
+		"src/SFMLSpriter/SimpleTextureManager.cpp"
+		"src/SFMLSpriter/Animation.cpp"
+		"src/SFMLSpriter/Frame.cpp"
+		)
+set(SFML_SPRITER_INCLUDE_FILES
+		"include/SFMLSpriter/Character.hpp"
+		"include/SFMLSpriter/API.hpp"
+		"include/SFMLSpriter/TextureManager.hpp"
+		"include/SFMLSpriter/SimpleTextureManager.hpp"
+		"include/SFMLSpriter/Animation.hpp"
+		"include/SFMLSpriter/Frame.hpp"
+		)
 
 add_definitions(-Wall -DSPRITER)
 # set(CMAKE_C_FLAGS "-Wall")
