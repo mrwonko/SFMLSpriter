@@ -6,11 +6,13 @@ int main()
 {
     SFMLSpriter::SimpleTextureManager textureManager; //C++ guarantees deletion in reverse order of creation, so the textureManager will still live when testChar dies and thus releases its textures.
     SFMLSpriter::Character testChar(textureManager);
+    testChar.setPosition(400, 300);
     sf::RenderWindow wnd(sf::VideoMode(800, 600), "SFML Spriter Test");
     while(wnd.isOpen())
     {
         // Drawing (before logic so it can be done in parallel)
         wnd.clear();
+        wnd.draw(testChar);
 
         // Event Loop
         sf::Event ev;
