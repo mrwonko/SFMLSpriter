@@ -7,3 +7,5 @@ By Willi "Mr. Wonko" Schinmeyer
 === Known Issues ===
 
 There seems to be a problem possibly connected to RapidXML in Microsoft Visual Studio 2010, it reads garbage at some point.
+
+To clarify: '''This is most likely broken in Visual Studio!'''
