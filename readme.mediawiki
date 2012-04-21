@@ -3,3 +3,7 @@
 ''' An implementation of the [http://www.brashmonkey.com/spriter.htm Spriter] Beta File Format for [http://www.sfml-dev.org SFML] 2.0 '''
 
 By Willi "Mr. Wonko" Schinmeyer
+
+=== Known Issues ===
+
+There seems to be a problem possibly connected to RapidXML in Microsoft Visual Studio 2010, it reads garbage at some point.
